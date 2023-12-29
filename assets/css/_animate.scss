@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+.animate__animated {
+	animation-duration: $jw-animate-duration;
+	animation-fill-mode: both;
+}
+
+.animate__repeat-1 {
+	animation-iteration-count: $jw-animate-repeat;
+}
+
+.animate__repeat-2 {
+	animation-iteration-count: calc($jw-animate-repeat * 2);
+}
+
+.animate__repeat-3 {
+	animation-iteration-count: calc($jw-animate-repeat * 3);
+}
+
+.animate__delay-1 {
+	animation-delay: $jw-animate-delay;
+}
+
+.animate__delay-2 {
+	animation-delay: calc($jw-animate-delay * 2);
+}
+
+.animate__delay-3 {
+	animation-delay: calc($jw-animate-delay * 3);
+}
+
+.animate__delay-4 {
+	animation-delay: calc($jw-animate-delay * 4);
+}
+
+.animate__delay-5 {
+	animation-delay: calc($jw-animate-delay * 5);
+}
+
+.animate__delay-6 {
+	animation-delay: calc($jw-animate-delay * 6);
+}
+
+.animate__delay-7 {
+	animation-delay: calc($jw-animate-delay * 7);
+}
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform: translate3d(-5%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translateZ(0);
+	}
+}
+
+.animate__fadeInLeft {
+	animation-name: fadeInLeft;
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -25%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translateZ(0);
+	}
+}
+.animate__fadeInDown {
+	animation-name: fadeInDown;
+}
